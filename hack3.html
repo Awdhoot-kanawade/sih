@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>JavaScript Radio Button</title>
+        <meta charset="UTF-8">
+        
+        <script>
+            
+            // by name
+                function func() 
+                {
+                    var type = document.getElementsByName("type1");
+                    if(type1[0].checked)
+                    {
+                        var val = type1[0].value;
+                        alert(val);
+                    }
+                    
+                    else if(type1[1].checked)
+                    {
+                        var val = type1[1].value;
+                        alert(val);
+                    }
+                    
+                    else if(type1[2].checked)
+                    {
+                        var val = type1[2].value;
+                        alert(val);
+                    }
+                }
+                
+
+                // by Id
+                 function func2() 
+                {
+                    if(document.getElementById("h").checked)
+                    {
+                        var val = document.getElementById("h").value;
+                        alert(val);
+                    }
+                    
+                    else if(document.getElementById("r").checked)
+                    {
+                        var val = document.getElementById("r").value;
+                        alert(val);
+                    }
+                    
+                    else if(document.getElementById("a").checked)
+                    {
+                        var val = document.getElementById("a").value;
+                        alert(val);
+                    }
+                }
+    
+    </script>
+        
+    </head>
+    <body background="simple3.jpg">
+<font face="Algerian">
+   <h1>1) WHICH OBJECT READS DATA IN HARD DRIVE</h1>     
+<h3>
+<input type="radio" name="type1" value="correct..." id="h" onclick="func2();"/>1) Header<br/>
+<input type="radio" name="type1" value="wrong please try again..." id="r"  onclick="func2();"/>2) Platter<br/>
+<input type="radio" name="type1" value="wrong please try again..." id="a" onclick="func2();"/>3) Logic Board<br/>
+</h3>
+</font>     
+<a href="sub1.html" name="link">NEXT</a><br>   
+<a href="sub2.html" name="link">LAST</a><br>   
+    
+</body>
+</html>
+
